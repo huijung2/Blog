@@ -37,7 +37,9 @@ public class DummyControllerTest {
 	// save 함수는 id를 전달하면 해당 id에 대한 데이터가 없으면 insert를 함.
 	// email, password 수정 
 	
-	@Transactional
+	
+	
+	@Transactional // 함수 종료시 자동으로 커밋됨.
 	@PutMapping("/dummy/user/{id}")
 	public User updateUser(@PathVariable int id, @RequestBody User requestUser) { // json 데이터를 요청 -> JAva Object(MessageConverter의 Jackson라이브러리가 변환해서 받아줌.)
 		System.out.println("id : "+id);
@@ -52,8 +54,8 @@ public class DummyControllerTest {
 		
 		// userRepository.save(user);
 		
-		// 더티 체킹 
-		return null;
+		// 더티 체킹 (더러운 조각을 날린다는 의미)
+		return user;
 	}
 	
 	//http://localhost:8000/blog/dummy/user
