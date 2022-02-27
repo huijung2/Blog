@@ -1,4 +1,4 @@
-package com.cos.blog.model;
+ package com.cos.blog.model;
 
 import java.sql.Timestamp;
 
@@ -43,6 +43,8 @@ public class User {
 	//DB는 RoleType이라는게 없다.
 	@Enumerated(EnumType.STRING)
 	private RoleType role; //Enum을 쓰는게 좋다. // ADMIN, USER
+	
+	private String oauth; // kakao, google 사용자 구분
 	
 	@CreationTimestamp //시간이 자동입력
 	private Timestamp createDate;
