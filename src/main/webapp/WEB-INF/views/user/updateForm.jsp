@@ -3,6 +3,7 @@
 
 <div class="container">
 	<form>
+	<input type="hidden" id="id" value="${principal.user.id}"/>
 		<div class="form-group">
 			<label for="username">아이디:</label>
 			 <input type="text" value="${principal.user.username}" class="form-control" id="username" readonly>
@@ -10,7 +11,7 @@
 
 		<div class="form-group">
 			<label for="password">비밀번호:</label>
-			 <input type="password"  value="${principal.user.password}" class="form-control" id="password">
+			 <input type="password"  class="form-control" id="password">
 		</div>
 
 		<div class="form-group">
