@@ -37,6 +37,7 @@ let index = {
 	update: function(){
 		let data = {
 			id: $("#id").val(),
+			username: $("#username").val(),
 			password: $("#password").val(),
 			email: $("#email").val()
 		};
@@ -53,7 +54,7 @@ let index = {
 		}).fail(function(error){
 			alert(JSON.stringify(error));
 		}); 
-	},
+	}
 }
 
 index.init();

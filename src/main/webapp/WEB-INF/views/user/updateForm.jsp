@@ -3,7 +3,7 @@
 
 <div class="container">
 	<form>
-	<input type="hidden" id="id" value="${principal.user.id}"/>
+	<input type="hidden"  id="id"  value="${principal.user.id}" />
 		<div class="form-group">
 			<label for="username">아이디:</label>
 			 <input type="text" value="${principal.user.username}" class="form-control" id="username" readonly>
