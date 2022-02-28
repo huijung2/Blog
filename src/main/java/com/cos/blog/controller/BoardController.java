@@ -36,10 +36,10 @@ public class BoardController {
 		return "board/updateForm";
 	}
 	
-		// USER 권한이 필요
-	@GetMapping("/board/saveForm")		
-	public String saveForm() {
-		return "board/saveForm";
+	// USER 권한이 필요
+		@GetMapping("/board/saveForm")
+		public String saveForm() {
+			return "board/saveForm";
 		}
 	}
 
